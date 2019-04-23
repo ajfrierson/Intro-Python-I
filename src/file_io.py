@@ -9,7 +9,7 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Print all the contents of the file, then close the file
 
 # YOUR CODE HERE
-f = open("foo.txt", r)
+f = open("foo.txt", "r")
 
 print(f.read())
 f.close()
@@ -20,5 +20,10 @@ f.close()
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-f = open('bar.txt', r+)
-f.
+p = open("bar.txt", "w")
+print(p.write("Test 1 "))
+print(p.write("Test 2 "))
+print(p.write("Test 3 "))
+
+p.close()
+
